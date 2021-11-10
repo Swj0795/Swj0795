@@ -1,0 +1,14 @@
+#!/bin/bash
+no1=45
+no2=66
+let result=no1+no2
+echo $result
+bash test3.sh
+
+#!/bin/bash
+no1=45
+no2=66
+let result=no1+no2
+echo $result
+bash test5.sh
+
