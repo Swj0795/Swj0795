@@ -12,3 +12,37 @@ let result=no1+no2
 echo $result
 bash test5.sh
 
+#!/bin/bash
+echo $JAVA_HOME
+
+#!/bin/bash
+echo "my home dir is $HOME"
+echo "my working dir is `pwd`"
+
+#!/bin/bash
+echo $[ $1+$2 ]
+if [ $1 -gt $2 ]
+     then echo $1
+     else echo $2
+fi
+
+#!/bin/bash
+read name animal1 animal2 animal3
+echo "welcome to our ${name}_zoo"
+echo "we have $animal1"
+
+#!/bin/bash
+sum=0
+for((i=0; i<100; i++))
+do
+   ((sum += i))
+done
+echo $sum
+
+#!/bin/bash
+
+ping -c 3 $1 >> /dev/null
+if [ $? -ne 0]
+    then echo "wrong"
+    else echo "correct"
+fi
